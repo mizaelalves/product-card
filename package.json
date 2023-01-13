@@ -1,0 +1,15 @@
+{
+  "scripts": {
+    "dev": "vite --host",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^2.7.2"
+  },
+  "dependencies": {
+    "three": "^0.148.0",
+    "three-controls": "^1.0.1",
+    "three-obj-loader": "^1.1.3"
+  }
+}

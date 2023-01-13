@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script type="importmap">
+    {
+        "imports": {
+            "three": "https://unpkg.com/three@0.138.0/build/three.module.js",
+            "OrbitControls": "https://unpkg.com/three@0.138.0/examples/jsm/controls/OrbitControls.js"
+        }
+    }
+</script>
+
+  <title>Document</title>
+</head>
+<body>
+  <script type="module" src="./main.js"></script>
+  <div class="container">
+    <div class="product-image">
+      <button class="btn-product"  onclick="changeElement()">
+        <img id="icon" src="./assets/Vector.png" alt="mostrar modelo 3d"/>
+        </button>
+        <img id="img" src="./assets/couch1.png" alt="sofa">   
+         <div id="render-product"></div>
+    </div>
+    <div class="product-info">
+      <p class="code">CÓDIGO: 42404</p>
+      <h1 class="name">Sofá Margot II - Beige</h1>
+      <span class="price">R$ 4.000 </span>
+      <button class="btn-bag">ADICIONAR À CESTA</button>
+    </div>
+  </div>
+  <script src="toggleButton" ></script>
+</body>
+</html>
