@@ -10,7 +10,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 2
-map_Ks -s 4.000000 4.000000 1.000000 \Couch Texture\FabricUpholsteryMossPlainWeave001_GLOSS_1K.jpg
+map_Ks -s 4.000000 4.000000 1.000000 CouchTexture\FabricUpholsteryMossPlainWeave001_AO_1K.jpg
 
 newmtl Metal
 Ns 575.999996
