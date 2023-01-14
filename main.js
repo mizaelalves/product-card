@@ -9,6 +9,7 @@ let containerRender = document.getElementById("render-product")
 const couch3d = 'https://raw.githubusercontent.com/mizaelalves/product-card/master/object/sofa.obj'
 const couchMaterial = 'https://cdn.statically.io/gh/mizaelalves/product-card/e0aafa9b/object/Textures/sofa.mtl'
 
+
 const init = () => {
 
   scene = new THREE.Scene();

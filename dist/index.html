@@ -14,17 +14,10 @@
   <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
   
 
-  <script type="importmap">
-    {
-        "imports": {
-            "three": "https://unpkg.com/three@0.138.0/build/three.module.js",
-            "OrbitControls": "https://unpkg.com/three@0.138.0/examples/jsm/controls/OrbitControls.js"
-        }
-    }
-</script>
+
 
   <title>Document</title>
-  <script type="module" crossorigin src="/assets/index.665dba96.js"></script>
+  <script type="module" crossorigin src="/assets/index.aa59f220.js"></script>
   <link rel="stylesheet" href="/assets/index.f46c86c9.css">
 </head>
 
@@ -46,27 +39,29 @@
     </div>
   </div>
   <script type="text/javascript">
+    const  icon360 = 'https://raw.githubusercontent.com/mizaelalves/product-card/master/assets/Vector.png'
+    const iconClose = 'https://raw.githubusercontent.com/mizaelalves/product-card/master/assets/Stroke.svg'
+
     let image = document.getElementById("img")
     let containerRender = document.getElementById("render-product")
     let icon = document.getElementById("icon")
+
 
     function changeElement() {
       if (containerRender.style.display === "none") {
         containerRender.style.display = "block"
         image.style.display = "none"
-        icon.src = "assets/Stroke.svg"
+        icon.src = iconClose
         icon.style.width = "20px"
 
       }
       else {
         containerRender.style.display = "none"
         image.style.display = "block"
-        icon.src = "assets/Vector.png"
+        icon.src = icon360
         icon.style.width = "33px"
       }
     }
-
-
   </script>
 </body>
 
