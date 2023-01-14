@@ -6,6 +6,9 @@ import { MTLLoader } from 'three/examples/jsm/loaders/MTLLoader'
 let scene, camera, renderer, controls;
 let containerRender = document.getElementById("render-product")
 
+const couch3d = 'https://raw.githubusercontent.com/mizaelalves/product-card/master/object/sofa.obj'
+const couchMaterial = 'https://cdn.statically.io/gh/mizaelalves/product-card/e0aafa9b/object/Textures/sofa.mtl'
+
 const init = () => {
 
   scene = new THREE.Scene();
@@ -27,16 +30,16 @@ const init = () => {
   //carregamento da textura 
 
   var mtlLoader = new MTLLoader();
-  var url = "object/Textures/sofa.mtl";
+
   const objLoader = new OBJLoader();
 
-  mtlLoader.load(url, function (materials) {
+  mtlLoader.load(couchMaterial, function (materials) {
     materials.preload();
     objLoader.setMaterials(materials);
 
     // carregamento do objeto
     objLoader
-      .load('object/sofa.obj',
+      .load(couch3d,
         function (object) {
 
           scene.add(object)
